@@ -1,0 +1,169 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  flex-wrap: wrap;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.navbar-brand img {
+  height: 50px;
+  border-radius: 100px;
+  border: solid white;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Allow nav links to wrap and center */
+.nav ul {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navbar .container-fluid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.background {
+  background-image: url("../img/silhouette-brightess-50.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: rgba(14, 16, 26, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  overflow: auto;
+}
+
+/* SECTION DESIGNS */
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: white;
+  }
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  width: 0;
+  animation:
+    typewriter 3s steps(30, end) forwards,
+    blinkCaret 0.75s step-end 1s;
+  /* 6 blinks, then cursor disappears */
+  animation-fill-mode: forwards;
+}
+
+
+
+/* --- Center All Sections --- */
+
+.home,
+.about,
+.contact,
+.projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .about p {
+    max-width: 90%;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about p {
+    max-width: 95%;
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+}
+
+/* BUTTONS
+
+.btn1 {
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  border: solid white 1px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn1:hover {
+  background-color: #444;
+  transform: scale(1.03);
+}
+
+*/
+
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
