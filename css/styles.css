@@ -114,12 +114,13 @@ body {
 .projects {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* ensures vertical stacking */
   padding: 2rem;
   text-align: center;
 }
+
 
 .about p {
   max-width: 800px;

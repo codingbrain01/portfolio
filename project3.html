@@ -1,113 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DFCAMCLP Portal</title>
+    <link rel="icon" type="image/x-icon" href="../img/developer.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      #home {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+        padding-top: 2rem;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DFCAMCLP Portal</title>
-  <link rel="icon" type="image/x-icon" href="../img/developer.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    #home {
-      height: 100vh;
-      align-items: center;
-      text-align: center
-    }
+      img {
+        max-width: 100%;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      }
 
-    .container {
-      padding: 20px;
-    }
+      .feature {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        transition: background-color 0.3s;
+      }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      /* This centers the image */
-      border-radius: 10px;
-    }
-  </style>
-</head>
+      .feature:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
 
-<body>
-  <!--BODY-->
-  <div class="container-fluid background">
-    <div class="container-lg main">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid justify-content-between align-items-center flex-wrap">
-          <a class="navbar-brand" href="index.html"><img src="img/jcf2.ico" alt="Logo" /></a>
-          <ul class="nav justify-content-center flex-wrap">
-            <li class="nav-item">
-              <a class="nav-link link-light" href="index.html?=#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-light" href="index.html?=#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-light" href="index.html?=#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-light" href="index.html?=#projects">Projects</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <body>
+    <div class="container-fluid background">
+      <div class="container-lg main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div
+            class="container-fluid justify-content-between align-items-center flex-wrap"
+          >
+            <a class="navbar-brand" href="index.html"
+              ><img src="img/jcf2.ico" alt="Logo"
+            /></a>
+            <ul class="nav justify-content-center flex-wrap">
+              <li class="nav-item">
+                <a class="nav-link link-light" href="index.html#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="index.html#contact"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="index.html#projects"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-      <div id="home" class="container-md text-center">
-        <h2>DFCAMCLP Portal</h2>
-        <div class="container text-center">
+        <!-- Main Content -->
+        <div id="home" class="container-md text-center">
+          <h2 class="mb-4">DFCAMCLP Portal</h2>
+
+          <!-- Admin Portal -->
           <h3>Admin Portal</h3>
-          <img src="img/dfcam/dfcam1.png" alt="DFCAM PORTAL">
-          <p>The user begins here by signing in with their credentials.</p>
-          <img src="img/dfcam/dfcam2.png" alt="DFCAM PORTAL">
-          <p>After logging in as an Admin, the dashboard displays all instructor records for review and management.</p>
-          <img src="img/dfcam/dfcam3.png" alt="DFCAM PORTAL">
-          <p>Clicking on More Details reveals the instructor's profile information and history.</p>
-          <img src="img/dfcam/dfcam4.png" alt="DFCAM PORTAL">
-          <p>On the Instructor Profile page, the Admin can update or modify personal and professional details.</p>
-          <img src="img/dfcam/dfcam6.png" alt="DFCAM PORTAL">
-          <p>From the Home page, the Admin can access and submit payslips to the respective Instructor's Portal.</p>
-          <img src="img/dfcam/dfcam7.png" alt="DFCAM PORTAL">
-          <p>Under the Attendance tab, the Admin can track each instructor’s daily attendance logs.</p>
-          <img src="img/dfcam/dfcam8.png" alt="DFCAM PORTAL">
-          <p>The Attendance page shows real-time clock-in and clock-out entries for instructors.</p>
-          <img src="img/dfcam/dfcam9.png" alt="DFCAM PORTAL">
-          <p>The Leave Request page lists all submitted requests, along with their current status—either approved or
-            disapproved.</p>
-          <img src="img/dfcam/dfcam10.png" alt="DFCAM PORTAL">
-          <p>Leave requests are reviewed and approved or disapproved by the Admin.</p>
-          <img src="img/dfcam/dfcam11.png" alt="DFCAM PORTAL">
-          <p>The Database page provides the Admin with access to all instructor records and system data.</p>
-          <img src="img/dfcam/dfcam12.png" alt="DFCAM PORTAL">
-          <p>This section focuses on individual instructor profiles within the database.</p>
-          <img src="img/dfcam/dfcam13.png" alt="DFCAM PORTAL">
-          <p>Admins can delete inactive instructor records, but a confirmation prompt will appear before deletion to
-            prevent accidental removal.</p>
-          <hr>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam1.png" alt="Login Page" />
+            <p>The user begins here by signing in with their credentials.</p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam2.png" alt="Admin Dashboard" />
+            <p>
+              The Admin dashboard displays all instructor records for review and
+              management.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam3.png" alt="More Details" />
+            <p>
+              Clicking on More Details reveals the instructor's profile
+              information and history.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam4.png" alt="Update Instructor" />
+            <p>
+              On the Instructor Profile page, the Admin can update personal and
+              professional details.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam6.png" alt="Submit Payslip" />
+            <p>
+              From the Home page, the Admin can access and submit payslips to
+              the respective Instructor's Portal.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam7.png" alt="Attendance Tracking" />
+            <p>
+              Under the Attendance tab, the Admin can track each instructor’s
+              daily logs.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam8.png" alt="Attendance Entries" />
+            <p>
+              The Attendance page shows real-time clock-in and clock-out
+              entries.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam9.png" alt="Leave Request" />
+            <p>
+              The Leave Request page lists all submissions with their current
+              approval status.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam10.png" alt="Leave Approval" />
+            <p>
+              Leave requests are reviewed and either approved or disapproved by
+              the Admin.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam11.png" alt="Database Panel" />
+            <p>
+              The Database page gives the Admin access to all instructor records
+              and system data.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam12.png" alt="Instructor Record Detail" />
+            <p>
+              This section focuses on individual instructor profiles in the
+              database.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam13.png" alt="Delete Record" />
+            <p>
+              Admins can delete inactive records, with confirmation prompts to
+              prevent accidental deletion.
+            </p>
+          </div>
+
+          <hr />
+
+          <!-- Instructor Portal -->
           <h3>Instructor Portal</h3>
-          <img src="img/dfcam/dfcam14.png" alt="DFCAM PORTAL">
-          <p>Instructors land on this Home page after logging in to access all their tools and records.</p>
-          <img src="img/dfcam/dfcam15.png" alt="DFCAM PORTAL">
-          <p>Similar to the Admin portal, instructors can view and update their personal information through their
-            profile.</p>
-          <img src="img/dfcam/dfcam16.png" alt="DFCAM PORTAL">
-          <p>The Instructor Attendance page displays real-time entries of clock-ins and clock-outs.</p>
-          <img src="img/dfcam/dfcam17.png" alt="DFCAM PORTAL">
-          <p>On the Leave Request page, instructors can choose a date and type of leave—such as sick leave, special
-            privilege leave, or vacation leave. They can also track the approval status of their requests.</p>
-          <img src="img/dfcam/dfcam18.png" alt="DFCAM PORTAL">
-          <p>The Payslip section displays records as soon as the Admin uploads them. Instructors have the option to
-            download their payslips immediately.</p>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam14.png" alt="Instructor Home" />
+            <p>
+              Instructors land on this Home page after logging in to access
+              their tools and records.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam15.png" alt="Update Profile" />
+            <p>
+              Instructors can view and update their personal info via their
+              profile page.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam16.png" alt="Attendance View" />
+            <p>
+              The Attendance page shows their clock-ins and clock-outs in
+              real-time.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam17.png" alt="Leave Submission" />
+            <p>
+              Instructors can submit and track the status of different types of
+              leave.
+            </p>
+          </div>
+
+          <div class="feature">
+            <img src="img/dfcam/dfcam18.png" alt="Payslip Viewer" />
+            <p>
+              The Payslip section lets instructors view and download their
+              salary records.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script/script.js"></script>
-</body>
-
+  </body>
 </html>
