@@ -118,7 +118,6 @@ body {
   align-items: center;
   flex-direction: column; /* ensures vertical stacking */
   padding: 2rem;
-  text-align: center;
 }
 
 
@@ -144,25 +143,6 @@ body {
     padding: 0 0.5rem;
   }
 }
-
-/* BUTTONS
-
-.btn1 {
-  padding: 20px;
-  background-color: #222;
-  color: white;
-  border: solid white 1px;
-  border-radius: 10px;
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn1:hover {
-  background-color: #444;
-  transform: scale(1.03);
-}
-
-*/
 
 .card:hover {
   transform: scale(1.03);
